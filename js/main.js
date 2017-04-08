@@ -1,44 +1,20 @@
-
-//Setup
-var contacts = [
-    {
-        "firstName": "Akira",
-        "lastName": "Laine",
-        "number": "0543236543",
-        "likes": ["Pizza", "Coding", "Brownie Points"]
-    },
-    {
-        "firstName": "Harry",
-        "lastName": "Potter",
-        "number": "0994372684",
-        "likes": ["Hogwarts", "Magic", "Hagrid"]
-    },
-    {
-        "firstName": "Sherlock",
-        "lastName": "Holmes",
-        "number": "0487345643",
-        "likes": ["Intriguing Cases", "Violin"]
-    },
-    {
-        "firstName": "Kristian",
-        "lastName": "Vos",
-        "number": "unknown",
-        "likes": ["Javascript", "Gaming", "Foxes"]
-    }
-];
-
-
-function lookUpProfile(firstName, prop){
-// Only change code below this line
-  for (i = 0; i < contacts.length; i++) {
-    if (firstName == contacts[i].firstName) {
-      for (j = 0; j < contacts[i].length; j++){
-        if (prop == )
-      }
-    }
+function sumAll(arr) {
+  var minNum = Math.min.apply(null, arr);
+  var maxNum = Math.max.apply(null, arr);
+  var newArr = [];
+  var len = maxNum - minNum +1;
+  
+  for (var i = 0; i < len; i++) {
+  	var a = minNum + i;
+  	newArr.push(a);
   }
-// Only change code above this line
+  console.log(newArr);
+  
+  	function getSum(total, num) {
+    	return total + num;
+	}
+  console.log(newArr.reduce(getSum, 0))
+	
 }
 
-// Change these values to test your function
-lookUpProfile("Akira", "likes");
+sumAll([1, 4]);

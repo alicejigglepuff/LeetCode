@@ -1,0 +1,21 @@
+
+function truncateString(str, num) {
+  // Clear out that junk in your trunk
+  var output = "";
+  if (num > 3){
+    if (str.length <= num){
+      output = str;
+    }else{
+      output = str.slice(0, num-3).concat("...");
+    }
+  }else{
+      output = str.slice(0, num).concat("...");
+  }
+  
+
+
+ return output;
+
+}
+
+truncateString("A-", 1);
